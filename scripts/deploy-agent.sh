@@ -1,10 +1,17 @@
 #!/bin/bash
 
 # Single Agent Deployment Script
-# Usage: bash deploy-agent.sh <agent-number>
-# Example: bash deploy-agent.sh 01
+# Usage: bash scripts/deploy-agent.sh <agent-number>
+# Example: bash scripts/deploy-agent.sh 01
 
 set -e
+
+# Get the directory where the script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+
+# Change to project root
+cd "$PROJECT_ROOT"
 
 # Check if agent number is provided
 if [ -z "$1" ]; then

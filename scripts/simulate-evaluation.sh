@@ -3,8 +3,16 @@
 # A2A Simulation: Idea Evaluation Pipeline
 # This script simulates an idea flowing through the 8-agent evaluation team
 # Agents: 01-07, 10 (GTM Strategist and Risk Analyst omitted due to AWS vCPU limits)
+# Usage: bash scripts/simulate-evaluation.sh
 
 set -e
+
+# Get the directory where the script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+
+# Change to project root
+cd "$PROJECT_ROOT"
 
 # Check if agent IPs file exists
 if [ ! -f "deployments/agent-ips.txt" ]; then
