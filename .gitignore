@@ -51,3 +51,16 @@ ENV/
 # Logs
 *.log
 logs/
+
+# NEST deployment
+NEST/
+
+# Agent configurations with API keys
+shared-config.env
+
+# Deployment artifacts
+deployments/*.log
+deployments/agent-ips.txt
+
+# Simulation results
+simulations/

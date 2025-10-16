@@ -1,0 +1,19 @@
+# Agent IP Addresses
+# Fill in the public IPs after deploying each agent
+# The deployment script will output the IP for each agent
+
+AGENT_01_IP=
+AGENT_02_IP=
+AGENT_03_IP=
+AGENT_04_IP=
+AGENT_05_IP=
+AGENT_06_IP=
+AGENT_07_IP=
+AGENT_08_IP=
+AGENT_09_IP=
+AGENT_10_IP=
+
+# Example (after deployment):
+# AGENT_01_IP=54.123.45.67
+# AGENT_02_IP=54.123.45.68
+# ...
